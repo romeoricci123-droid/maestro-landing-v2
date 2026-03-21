@@ -252,14 +252,14 @@
         </div>
         <div class="debate-card">
           <div class="debate-role">Proposer</div>
-          <div class="debate-model">Anthropic Claude Opus 4.6</div>
+          <div class="debate-model">OpenAI GPT-5.4</div>
           <div class="debate-text">Implement SlowAPI rate limiter on /api/submit — 10 req/min per user. Modify backend/api/mission_routes.py and register Starlette middleware.</div>
           <span class="evidence-chip">backend/api/mission_routes.py:38-52</span>
           <span class="evidence-chip">requirements.txt:14</span>
         </div>
         <div class="debate-card">
           <div class="debate-role">Challenger</div>
-          <div class="debate-model">Gemini Pro 3.1</div>
+          <div class="debate-model">Anthropic Claude Sonnet 4.6</div>
           <div class="debate-text">Redis not present in config.yaml. Use SlowAPI with in-memory fallback. Middleware must be registered before routing or rate limiting silently fails.</div>
           <span class="evidence-chip">backend/config.yaml:8 — no redis_url</span>
           <span class="evidence-chip">backend/main.py:22</span>
